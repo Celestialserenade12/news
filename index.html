@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Celestialserenade12</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --bg-dark: #0b0f1a;
+            --bg-light: #12182b;
+            --accent: #8ab4ff;
+            --text-main: #eaeaff;
+            --text-muted: #b8c1ec;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(180deg, var(--bg-dark), var(--bg-light));
+            color: var(--text-main);
+            line-height: 1.6;
+        }
+
+        header {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+            letter-spacing: 2px;
+            margin-bottom: 1rem;
+        }
+
+        header p {
+            max-width: 600px;
+            color: var(--text-muted);
+            font-size: 1.1rem;
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(11, 15, 26, 0.85);
+            backdrop-filter: blur(8px);
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            padding: 1rem;
+            z-index: 100;
+        }
+
+        nav a {
+            color: var(--text-main);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--accent);
+        }
+
+        section {
+            padding: 5rem 10%;
+        }
+
+        section h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.2rem;
+            margin-bottom: 1.5rem;
+            color: var(--accent);
+        }
+
+        section p {
+            max-width: 800px;
+            color: var(--text-muted);
+            margin-bottom: 1rem;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.04);
+            padding: 2rem;
+            border-radius: 12px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 10px 30px rgba(138, 180, 255, 0.2);
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background: #080b14;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        footer span {
+            color: var(--accent);
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <a href="#about">Tentang</a>
+        <a href="#vision">Visi</a>
+        <a href="#works">Karya</a>
+        <a href="#contact">Kontak</a>
+    </nav>
+
+    <header>
+        <h1>Celestialserenade12</h1>
+        <p>
+            Sebuah identitas yang lahir dari harmoni kosmos dan melodi sunyi.
+            Celestialserenade12 adalah perpaduan antara imajinasi, kreativitas,
+            dan ketenangan semesta.
+        </p>
+    </header>
+
+    <section id="about">
+        <h2>Tentang Celestialserenade12</h2>
+        <p>
+            Celestialserenade12 merepresentasikan perjalanan artistik yang
+            terinspirasi oleh bintang, ruang angkasa, dan alunan emosi manusia.
+            Nama ini melambangkan serenada langit—sebuah pesan lembut dari
+            semesta yang diterjemahkan ke dalam karya.
+        </p>
+        <p>
+            Proyek ini dapat mencakup musik, tulisan, visual, maupun konsep
+            kreatif lain yang membawa nuansa reflektif dan magis.
+        </p>
+    </section>
+
+    <section id="vision">
+        <h2>Visi & Filosofi</h2>
+        <div class="cards">
+            <div class="card">
+                <h3>✨ Harmoni</h3>
+                <p>
+                    Menciptakan keseimbangan antara rasa, pikiran, dan imajinasi.
+                </p>
+            </div>
+            <div class="card">
+                <h3>🌌 Kosmik</h3>
+                <p>
+                    Terinspirasi dari luasnya alam semesta dan misterinya.
+                </p>
+            </div>
+            <div class="card">
+                <h3>🎶 Serenade</h3>
+                <p>
+                    Menyampaikan pesan dengan lembut, emosional, dan bermakna.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="works">
+        <h2>Karya & Aktivitas</h2>
+        <p>
+            Beberapa bentuk karya yang dapat dihadirkan oleh Celestialserenade12:
+        </p>
+        <div class="cards">
+            <div class="card">
+                <h3>Musik</h3>
+                <p>Ambient, instrumental, atau komposisi eksperimental.</p>
+            </div>
+            <div class="card">
+                <h3>Tulisan</h3>
+                <p>Puisi, prosa pendek, dan refleksi filosofis.</p>
+            </div>
+            <div class="card">
+                <h3>Visual</h3>
+                <p>Ilustrasi kosmik, desain digital, dan konsep artistik.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Kontak</h2>
+        <p>
+            Tertarik untuk berkolaborasi atau sekadar menyapa?
+            Celestialserenade12 terbuka untuk percakapan dan ide baru.
+        </p>
+        <p>
+            Email: <strong>celestialserenade12@email.com</strong><br>
+            Media Sosial: <strong>@celestialserenade12</strong>
+        </p>
+    </section>
+
+    <footer>
+        © 2026 <span>Celestialserenade12</span> — Serenade from the stars.
+    </footer>
+
+</body>
+</html>
